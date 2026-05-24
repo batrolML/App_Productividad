@@ -17,11 +17,21 @@ Desarrollar aplicativo de productividad en Python que sirva como administrador d
 
 ### Estructura de la App
 
-**Definición de clases (Atributos y Métodos)**
+**Definición de clases (Con sus atributos y métodos)**
 
-1. *Tarea.* Contedrá lo siguiente:
-    - Datos = Descripción | Categoría | Detalles | Estado
-    - Acciones = Modificar estado | Visualizar detalles de tarea 
+1. **Tarea:**
+
+    Atributos:
+
+- `_descripcion`: un `str` con una breve descripción de la tarea
+- `_categoria`: un `str` que permitirá diferenciar un tipo de tarea de otra (ejemplo: "hogar", "trabajo", "emprendimiento", "estudio", etc.)
+- `_detalle`: un `str` que podrá ser extenso y que contendrá la descripción detallada de la tarea
+- `_estado`: que podrá ser `Pendiente` (valor por defecto) o `Completada`
+
+
+    Métodos:
+- Un método para modificar el `_estado`
+- Un método para `mostrar` en pantalla la información de la tarea
 
 
 2. *Administrador.* Contendrá lo siguiente:
